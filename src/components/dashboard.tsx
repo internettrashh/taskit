@@ -1,5 +1,4 @@
 
-import { Link } from "react-router-dom";
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
@@ -10,40 +9,7 @@ import { Badge } from "@/components/ui/badge"
 export function Dashboard() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-primary text-primary-foreground px-4 md:px-6 h-14 flex items-center justify-between">
-        <Link to="#" className="flex items-center gap-2" >
-          <MountainIcon className="h-6 w-6" />
-          <span className="text-lg font-semibold">Acme Inc</span>
-        </Link>
-        <nav className="hidden md:flex gap-6 text-sm font-medium">
-          <Link to="#" className="hover:underline underline-offset-4" >
-            Dashboard
-          </Link>
-          <Link to="#" className="hover:underline underline-offset-4" >
-            Employees
-          </Link>
-          <Link to="#" className="hover:underline underline-offset-4" >
-            Tasks
-          </Link>
-          <Link to="#" className="hover:underline underline-offset-4" >
-            Reports
-          </Link>
-          <Link to="#" className="hover:underline underline-offset-4" >
-            Settings
-          </Link>
-        </nav>
-        <div className="flex items-center gap-2">
-          <Input
-            type="search"
-            placeholder="Search employees..."
-            className="bg-primary/20 text-primary-foreground rounded-md px-3 py-2 text-sm"
-          />
-          <Button variant="ghost" size="icon" className="rounded-full">
-            <img src="/placeholder.svg" width="32" height="32" className="rounded-full" alt="Avatar" />
-            <span className="sr-only">Toggle user menu</span>
-          </Button>
-        </div>
-      </header>
+     
       <main className="flex-1 grid gap-4 p-4 md:p-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <Card>
@@ -317,24 +283,7 @@ function FilterIcon(props:any) {
 }
 
 
-function MountainIcon(props:any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
-  )
-}
+
 
 
 function UsersIcon(props:any) {
@@ -360,22 +309,4 @@ function UsersIcon(props:any) {
 }
 
 
-function XIcon(props:any) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>
-  )
-}
+
